@@ -3,7 +3,7 @@ var validateBtn = form.querySelector(".validate_Btn");
 var resetBtn = form.querySelector(".reset_Btn");
 var fields = form.querySelectorAll(".field");
 var shields = form.querySelectorAll(".text, .big_text");
-var array = ["Башня", "Этаж", "Переговорная", "Дата", "Время", "Комментарий"];
+var array = ["tower", "floor", "room", "date", "time", "comment"];
 
 var generateError = function (text) {
   var error = document.createElement("div");
@@ -25,7 +25,7 @@ var checkFieldsPresence = function () {
     if (!fields[i].value) {
       var error = generateError("Поле не заполнено");
       shields[i].appendChild(error);
-      console.log("field: " + array[i] + " отсутсвует");
+      console.log("field: " + array[i] + " empty");
     } else {
       console.log(array[i] + ": " + fields[i].value);
     }

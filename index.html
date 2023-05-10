@@ -26,7 +26,7 @@
   <body>
     <h1 class="header">Форма бронирования переговорной</h1>
     <div class="form-validate">
-      <form class="form-validate__form" method="post">
+      <form class="form-validate__form" method="dialog">
         <div class="string">
           <p class="text">Выберите башню:</p>
           <select name="form__towers field" class="form__towers field">
@@ -91,15 +91,15 @@
           <p class="big_text_p"><strong>Комментарий</strong></p>
           <textarea name = "comment" class="big_text field" rows = "10"></textarea>
         </div>
-      </form>
-      <div class="form__buttons">
-        <div class="form__button_bottom_submit">
-          <input type="submit" value="Отправить" class="validate_Btn"></input>
+        <div class="form__buttons">
+          <div class="form__button_bottom_submit">
+            <input type="submit" value="Отправить" class="validate_Btn"></input>
+          </div>
+          <div class="form__button_bottom_reset">
+            <input type="reset" value="Сбросить" class="reset_Btn"></input>
+         </div>
         </div>
-        <div class="form__button_bottom_reset">
-          <input type="reset" value="Сбросить" class="reset_Btn"></input>
-       </div>
-      </div>
+      </form>
     </div>
   </body>
   <script src="./script/jscode.js"></script>
