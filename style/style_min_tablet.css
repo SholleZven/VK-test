@@ -1,0 +1,24 @@
+@media screen and (max-width: 1023px) {
+  body {
+    width: 100%;
+    min-width: 768px;
+    font-size: 25px;
+    line-height: 30px;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-weight: normal;
+    color: #271f1a;
+    background-color: #b4e0e79f;
+  }
+
+  textarea {
+    resize: none;
+    height: 150px;
+  }
+
+  .form-validate__form {
+    width: 60%;
+    margin: 0 auto;
+    padding-bottom: 30px;
+    height: 30%;
+  }
+}
