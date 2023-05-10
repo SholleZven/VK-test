@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="./style/style_min_tablet.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="./style/style_min_mobile.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="./style/normalize.css" type="text/css" />
+    <title>Форма бронирования переговорной</title>
+  </head>
+  <body>
+    <h1 class="header">Форма бронирования переговорной</h1>
+    <div class="form-validate">
+      <form class="form-validate__form" method="post">
+        <div class="string">
+          <p class="text">Выберите башню:</p>
+          <select name="form__towers field" class="form__towers field">
+            <option value="A">А</option>
+            <option value="B">Б</option>
+          </select>
+        </div>
+        <div class="string">
+          <p class="text">Выберите этаж:</p>
+          <select name="form__floors field" class="form__floors field">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">13</option>
+            <option value="14">14</option>
+            <option value="15">15</option>
+            <option value="16">16</option>
+            <option value="17">17</option>
+            <option value="18">18</option>
+            <option value="19">19</option>
+            <option value="20">20</option>
+            <option value="21">21</option>
+            <option value="22">22</option>
+            <option value="23">23</option>
+            <option value="24">24</option>
+            <option value="25">25</option>
+            <option value="26">26</option>
+            <option value="27">27</option>
+          </select>
+        </div>
+        <div class="string">
+          <p class="text">Выберите переговорную:</p>
+          <select name="form__rooms field" class="form__rooms field">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+          </select>
+        </div>
+        <div class="string">
+          <p class="text">Выберите дату:</p>
+          <input type="date" name="date" class="form__data field">
+        </div>
+        <div class="string">
+          <p class="text">Выберите время:</p>
+          <input type="time" name="time" class="form__time field">
+        </div>
+        <div class="big_string">
+          <p class="big_text_p"><strong>Комментарий</strong></p>
+          <textarea name = "comment" class="big_text field" rows = "10"></textarea>
+        </div>
+      </form>
+      <div class="form__buttons">
+        <div class="form__button_bottom_submit">
+          <input type="submit" value="Отправить" class="validate_Btn"></input>
+        </div>
+        <div class="form__button_bottom_reset">
+          <input type="reset" value="Сбросить" class="reset_Btn"></input>
+       </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script/jscode.js"></script>
+</html>
